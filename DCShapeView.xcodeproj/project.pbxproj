@@ -15,7 +15,7 @@
 		4003C2F71E67B2120007710B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4003C2F51E67B2120007710B /* LaunchScreen.storyboard */; };
 		4003C3021E67B2120007710B /* DCShapeViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4003C3011E67B2120007710B /* DCShapeViewTests.m */; };
 		4003C30D1E67B2120007710B /* DCShapeViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4003C30C1E67B2120007710B /* DCShapeViewUITests.m */; };
-		4003C31C1E67B2540007710B /* DCShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4003C31B1E67B2540007710B /* DCShapeView.m */; };
+		4003C31C1E67B2540007710B /* DCSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4003C31B1E67B2540007710B /* DCSliderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		4003C3081E67B2120007710B /* DCShapeViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCShapeViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4003C30C1E67B2120007710B /* DCShapeViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCShapeViewUITests.m; sourceTree = "<group>"; };
 		4003C30E1E67B2120007710B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4003C31A1E67B2540007710B /* DCShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCShapeView.h; sourceTree = "<group>"; };
-		4003C31B1E67B2540007710B /* DCShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCShapeView.m; sourceTree = "<group>"; };
+		4003C31A1E67B2540007710B /* DCSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSliderView.h; sourceTree = "<group>"; };
+		4003C31B1E67B2540007710B /* DCSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSliderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 				4003C2ED1E67B2120007710B /* ViewController.h */,
 				4003C2EE1E67B2120007710B /* ViewController.m */,
 				4003C2F01E67B2120007710B /* Main.storyboard */,
-				4003C31A1E67B2540007710B /* DCShapeView.h */,
-				4003C31B1E67B2540007710B /* DCShapeView.m */,
+				4003C31A1E67B2540007710B /* DCSliderView.h */,
+				4003C31B1E67B2540007710B /* DCSliderView.m */,
 				4003C2F31E67B2120007710B /* Assets.xcassets */,
 				4003C2F51E67B2120007710B /* LaunchScreen.storyboard */,
 				4003C2F81E67B2120007710B /* Info.plist */,
@@ -281,7 +281,7 @@
 				4003C2EF1E67B2120007710B /* ViewController.m in Sources */,
 				4003C2EC1E67B2120007710B /* AppDelegate.m in Sources */,
 				4003C2E91E67B2120007710B /* main.m in Sources */,
-				4003C31C1E67B2540007710B /* DCShapeView.m in Sources */,
+				4003C31C1E67B2540007710B /* DCSliderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +513,7 @@
 				4003C3131E67B2120007710B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4003C3141E67B2120007710B /* Build configuration list for PBXNativeTarget "DCShapeViewTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +522,7 @@
 				4003C3161E67B2120007710B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4003C3171E67B2120007710B /* Build configuration list for PBXNativeTarget "DCShapeViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +531,7 @@
 				4003C3191E67B2120007710B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

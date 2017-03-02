@@ -6,10 +6,10 @@
 //  Copyright © 2017年 XDChang. All rights reserved.
 //
 
-#import "DCShapeView.h"
+#import "DCSliderView.h"
 #define WIDTH self.frame.size.width
 #define TITLE @[@"1期",@"2期",@"3期",@"6期",@"9期",@"12期"];
-@interface DCShapeView ()
+@interface DCSliderView ()
 
 
 @property (nonatomic,strong) NSMutableArray *btnArr; // 创建的btn
@@ -21,7 +21,7 @@
 @property (nonatomic,assign) float middleGap;//圆之间的中点系数
 @end
 
-@implementation DCShapeView
+@implementation DCSliderView
 {
     
     
@@ -100,7 +100,7 @@
 - (void)initFactor
 {
 
-    
+    // 实现各个圆之间的间距逐渐增大，我自己设置了几个参数，大家可以根据自己的实际情况去改变圆之间的间距。不是非要按照这个来，这里只是提供思路。
     // 4,5
     if (WIDTH == 320-20) {
         _xx = 4.0;

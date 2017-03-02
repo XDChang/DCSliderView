@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface DCShapeView : UIView
+@interface DCSliderView : UIView
 
 /*!
  @property shapeViewDelegate

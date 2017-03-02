@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "DCShapeView.h"
+#import "DCSliderView.h"
 @interface ViewController ()<ShapeViewDelegate>
 
 {
@@ -24,7 +24,7 @@
     [super viewDidLoad];
     
     // 1.
-    DCShapeView *shapeView = [[DCShapeView alloc]initWithFrame:CGRectMake(10, 60, self.view.frame.size.width -20, 30) WithLayerColor:[UIColor colorWithRed:0/255.0 green:210/255.0 blue:87/255.0 alpha:1]];
+    DCSliderView *shapeView = [[DCSliderView alloc]initWithFrame:CGRectMake(10, 60, self.view.frame.size.width -20, 30) WithLayerColor:[UIColor colorWithRed:0/255.0 green:210/255.0 blue:87/255.0 alpha:1]];
     
     // 2.
     shapeView.shapeViewDelegate = self;
