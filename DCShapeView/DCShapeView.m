@@ -24,6 +24,7 @@
 @implementation DCShapeView
 {
     
+    
     UIView *_holeShapeView; // 底层灰色背景view
     UIImageView *_targetView; // 大按钮
     UIBezierPath *_recPath; // 创建绿色layer的贝塞尔
