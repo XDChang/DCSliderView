@@ -161,7 +161,8 @@
     
     _targetView.userInteractionEnabled = YES;
     
-    UIPanGestureRecognizer *imageViewPanGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGesture:)];
+    UIPanGestureRecognizer *imageViewPanGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self
+                                                                                         action:@selector(panGesture:)];
     
     [_targetView addGestureRecognizer:imageViewPanGesture];
     
@@ -238,7 +239,7 @@
                 }
                 
             }
-            //CGRectOffset是以试图的原点为起始 移动 dx x移动距离  dy y移动距离
+            //CGRectOffset是以视图的原点为起始 移动 dx x移动距离  dy y移动距离
             
            gesture.view.frame =CGRectOffset(gesture.view.frame, point.x, y );
             
@@ -433,7 +434,7 @@
         }
         
         float x = 4 +(_yy+_xx*i)*i;
-        
+        // 节点按钮
         UIButton *stepBtn = [[UIButton alloc]initWithFrame:CGRectMake(x, -2, 14, 14)];
         
         [_btnArr addObject:stepBtn];
@@ -444,7 +445,7 @@
         [stepBtn addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:stepBtn];
         
-        
+        //下标题
         UILabel *qiShuLabel = [[UILabel alloc]init];
         
         qiShuLabel.center = CGPointMake(x-4, 20);
@@ -460,7 +461,6 @@
     }
    
 }
-
 #pragma mark --- 按钮点击事件
 - (void)onBtnClick:(UIButton *)btn
 {
@@ -468,7 +468,6 @@
     
     [_shapeViewDelegate onShapeViewDelegateEventWithString:titleArr[btn.tag]];
     
-
     [UIView animateWithDuration:0.3 animations:^{
         
         NSInteger x = [_btnOriginXArr[btn.tag]integerValue];
@@ -476,8 +475,6 @@
         rect.origin.x = x;
         _targetView.frame = rect;
         
-       
-
     } completion:^(BOOL finished) {
         // 改变下标题颜色
         for (UILabel *label in self.titleLabelArr) {
@@ -488,7 +485,6 @@
         
         firstLabel.textColor = [UIColor colorWithCGColor:K_CGColor];
     }];
-
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
@@ -515,23 +511,13 @@
             [_recPath addLineToPoint:CGPointMake(_targetView.frame.origin.x, 5.8)];
             
         }
-        
-        
         [_recPath closePath];
         
         _tubeShape.path = _recPath.CGPath;
         [_tubeShape setNeedsDisplay];
         [self.layer addSublayer:_tubeShape];
         
-        
-        
     });
-    
-    
-    
-
 }
-
-
 
 @end
